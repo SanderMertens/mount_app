@@ -1,0 +1,8 @@
+{
+  "id": "config/my_mount",
+  "type": "mount_app/sports",
+  "value": {
+      "query.select": "*",
+      "query.from": "data"
+  }
+}

@@ -1,0 +1,13 @@
+in package mount_app
+
+struct team:/
+    members: list{string}
+
+// Sports mount
+class sports: corto/vstore/mount :/
+    mock_teams: list{result}, not_null
+
+    int16 construct()
+
+    iterator{result} on_query(corto/vstore/query query) override
+    void on_notify(corto/vstore/subscriber_event event) override
